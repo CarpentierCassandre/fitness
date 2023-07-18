@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paiements</title>
+    <link rel="stylesheet" href="tarifs.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div id="logo">
+        <a><img src="images/logo.png" class="logo" alt="logo" /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Coaching</a></li>
+          <li><a href="#">Programmes</a></li>
+          <li><a href="#">Tarifs</a></li>
+          <li><a href="#">S'inscrire</a></li>
+          <li><a href="#">Mon Compte</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <section id="payment">
+      <div class="pay">
+        <h1>Paiements</h1>
+        <p>Espace de paiement sécurisé par carte bancaire</p>
+        <div class="paymentForm">
+          <form action="#" method="post">
+            <div class="firstInput">
+              <label for="country"
+                >Pays
+                <input
+                  type="text"
+                  id="country"
+                  name="country"
+                  placeholder="France"
+              /></label>
+            </div>
+            <div class="secondInput">
+              <label>Moyens de paiements</label>
+              <ul>
+                <li>
+                  <label for="cb">
+                    <input type="radio" id="cb" name="check" />
+                    CB</label
+                  >
+                </li>
+                <li>
+                  <input type="radio" id="visa" name="check" />
+                  <label for="visa">Visa</label>
+                </li>
+                <li>
+                  <input type="radio" id="mastercard" name="check" />
+                  <label for="mastercard">MasterCard</label>
+                </li>
+              </ul>
+            </div>
+            <div class="thirdInput">
+              <label for="cardNumber"
+                >Numéros de carte
+                <input
+                  type="text"
+                  id="cardNumber"
+                  name="cardNumber"
+                  placeholder="1234 5678 9012 3456"
+              /></label>
+            </div>
+            <div class="fourthInput">
+              <label for="date"
+                >Date d'expiration
+                <input type="month" min="2023-05" id="date" name="date"
+              /></label>
+            </div>
+            <div class="fifthInput">
+              <label for="cryptogram"
+                >Cryptogramme
+                <input type="text" id="cryptogram" name="cryptogram"
+              /></label>
+            </div>
+            <div class="sixthInput">
+              <label for="conditions"
+                ><input type="checkbox" id="conditions" /> J'accepte Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit.</label
+              >
+            </div>
+            <input type="submit" value="Payer" />
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
